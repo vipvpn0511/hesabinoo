@@ -1,18 +1,11 @@
-# حسابینو — iOS Glass v8
-
-نسخه بازطراحی‌شده مدیریت مالی با ظاهر شیشه‌ای و حس نزدیک به iOS.
-
-## امکانات اصلی
-- صفحه خانه بازطراحی‌شده با کارت موجودی شیشه‌ای
-- Bottom Navigation شیشه‌ای: خانه، اقساط، درآمد، تنظیمات
-- بخش اقساط و وام در صفحه جداگانه
-- تاریخ شمسی قابل ویرایش و تقویم شمسی
-- مدیریت یکپارچه حساب شخصی و مغازه
-- حساب همکاران و نمایش مبلغ طلب از همکاران
-- ثبت سریع درآمد، هزینه، قسط و همکار از صفحه خانه
-- نمودار، بودجه، پس‌انداز، طلب‌ها و گزارش‌ها
-- PWA و قابل نصب روی صفحه اصلی گوشی
-- ذخیره اطلاعات به‌صورت محلی روی دستگاه
-
-## اجرا
-فایل `index.html` را روی GitHub Pages یا هر هاست استاتیک قرار دهید. برای نصب روی گوشی، سایت را با مرورگر باز کرده و گزینه Add to Home Screen / افزودن به صفحه اصلی را انتخاب کنید.
+حسابینو v19 — Stability / Date / Chart Fixes
+- Local-date safe: no UTC date shifting for daily/monthly app dates.
+- Jalali date input/picker validation and month navigation hardened.
+- Persian weekday/date at top corrected.
+- Income, expense and customer/debt date saving validates Jalali dates.
+- Bottom navigation selector fixed.
+- Android/browser back navigation uses view history without hanging.
+- Charts handle zero/negative values and resize safely.
+- Dark mode receives complete dark overrides.
+- Sticky header/view animation removed to eliminate the moving white-line artifact.
+- Service-worker cache bumped to v19.
